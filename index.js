@@ -58,22 +58,22 @@ function checking() {
     }
 
     // Validate length
-    // if (password.value.length >= 8) {
-    //   password.classList.remove("error");
-    //   passSuggest.style.visibility = "hidden";
-    // } else {
-    //   password.classList.add("error");
-    //   passSuggest.style.visibility = "visible";
-    //   setTimeout(() => {
-    //     password.classList.remove("error");
-    //     passSuggest.style.visibility = "hidden";
-    //   }, 1500);
-    // }
+    if (password.value.length >= 8) {
+      password.classList.remove("error");
+      passSuggest.style.visibility = "hidden";
+    } else {
+      password.classList.add("error");
+      passSuggest.style.visibility = "visible";
+      setTimeout(() => {
+        password.classList.remove("error");
+        passSuggest.style.visibility = "hidden";
+      }, 1500);
+    }
 
     if (
       password.value.match(upperCaseLetters) &&
       password.value.match(number) &&
-      // password.value.length >= 8 &&
+      password.value.length >= 8 &&
       password.value.match(lowerCaseLetters)
     ) {
       correct.style.visibility = "visible";
