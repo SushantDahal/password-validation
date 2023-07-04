@@ -57,7 +57,7 @@ function checking() {
       }, 1500);
     }
 
-    // Validate length
+    // Validate length of password
     if (password.value.length >= 8) {
       password.classList.remove("error");
       passSuggest.style.visibility = "hidden";
@@ -72,8 +72,8 @@ function checking() {
 
     if (
       password.value.match(upperCaseLetters) &&
-      password.value.match(number) &&
       password.value.length >= 8 &&
+      password.value.match(number) &&
       password.value.match(lowerCaseLetters)
     ) {
       correct.style.visibility = "visible";
