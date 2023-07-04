@@ -24,7 +24,7 @@ function checking() {
       setTimeout(() => {
         password.classList.remove("error");
         passSuggest.style.visibility = "hidden";
-      }, 1000);
+      }, 1500);
     }
 
     //checking uppercase letter
@@ -39,7 +39,7 @@ function checking() {
       setTimeout(() => {
         password.classList.remove("error");
         passSuggest.style.visibility = "hidden";
-      }, 1000);
+      }, 1500);
     }
 
     //checking Number in password
@@ -54,7 +54,7 @@ function checking() {
       setTimeout(() => {
         password.classList.remove("error");
         passSuggest.style.visibility = "hidden";
-      }, 1000);
+      }, 1500);
     }
 
     // Validate length
@@ -67,7 +67,7 @@ function checking() {
       setTimeout(() => {
         password.classList.remove("error");
         passSuggest.style.visibility = "hidden";
-      }, 1000);
+      }, 1500);
     }
 
     if (
@@ -106,7 +106,7 @@ showPassword.addEventListener("click", function () {
     showPassword.style.color = "red";
     setTimeout(() => {
       showPassword.style.color = "black";
-    }, 1000);
+    }, 1500);
   } else {
     passwordField.type = "password";
   }

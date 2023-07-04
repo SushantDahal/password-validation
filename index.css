@@ -111,12 +111,13 @@ button:hover {
   }
 }
 span {
-  font-size: 9px;
+  font-size: 11px;
   color: red;
-  background-color: wheat;
+  background-color: transparent;
   display: block;
   margin: 0 25px 0 0;
   visibility: hidden;
+  font-family: monospace;
 }
 /* Alert Div */
 
