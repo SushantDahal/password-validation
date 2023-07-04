@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Password</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <script
+    src="https://kit.fontawesome.com/eed0f9355e.js"
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="form">
+            <h1>Enter your Details</h1>
+            <div class="username">
+            <h2>Username</h2>
+            <input class="usernameField" type="text">
+        </div>
+        <div class="password">
+            <h2>Password</h2>
+            <input class="passwordField" type="password"><i id="eye"  class="fa-sharp fa-solid fa-eye"></i>
+            <span class="span">password must be uppercase,lowercase and Number</span>
+        </div>
+            <button class="btn" onclick="checking()">Set Password</button>
+        </div>
+        </div>
+    </div>
+    <div class="Correct-box">
+      <div style="  border: 1px solid rgb(56, 182, 56);" class="msg-div">
+        <div class="icon"><i style="color: rgb(56, 182, 56); border:none ;" class="fa-solid fa-circle-check"></i></i></div>
+        <div class="info-div">
+          <h2 style="color: rgb(56, 182, 56); ">Upload Complete</h2>
+          <p>Congrats! Password was successfully added</p>
+        </div>
+        <button class="green_btn" >OK</button>
+      </div>
+    </div>
+    <div class="alert-box">
+      <div style="border: 1px solid rgb(163, 16, 16)" class="msg-div">
+        <div class="icon"><i class="fa-solid fa-circle-exclamation"></i></div>
+        <div class="info-div">
+          <h2 style="color: rgb(163, 16, 16)">Upload error</h2>
+          <p>Sorry! something went wrong</p>
+        </div>
+        <button class="red_btn">Try Again</button>
+      </div>
+    </div>
+   
+    
+    
+  </body>
+  <script src="index.js"></script>
+</html>
