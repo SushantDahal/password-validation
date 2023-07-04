@@ -32,13 +32,7 @@
 .container h2 {
   font-size: 12px;
 }
-span {
-  font-size: 9px;
-  color: red;
-  background-color: wheat;
-  display: block;
-  visibility: hidden;
-}
+
 .username {
   /* margin-top: 20px; */
   margin-bottom: 10px;
@@ -93,7 +87,7 @@ button:hover {
   margin-bottom: 10px;
 }
 .error {
-  animation: shake 0.2s linear 10;
+  animation: shake 0.2s linear 5;
 }
 
 @keyframes shake {
@@ -116,7 +110,14 @@ button:hover {
     transform: translateX(0.5px);
   }
 }
-
+span {
+  font-size: 9px;
+  color: red;
+  background-color: wheat;
+  display: block;
+  margin: 0 25px 0 0;
+  visibility: hidden;
+}
 /* Alert Div */
 
 .msg-div {

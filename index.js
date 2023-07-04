@@ -1,6 +1,7 @@
 const password = document.getElementsByClassName("passwordField")[0];
 const username = document.getElementsByClassName("usernameField")[0];
 const btn = document.getElementsByClassName("btn")[0];
+const passSuggest = document.querySelector(".suggest");
 
 function checking() {
   const usernamee = document.querySelector(".usernameField").value;
@@ -17,47 +18,55 @@ function checking() {
     var lowerCaseLetters = /[a-z]/g;
 
     if (password.value.match(lowerCaseLetters)) {
-      password.classList.remove("error");
-    } else {
+      passSuggest.style.visibility = "hidden";
       password.classList.add("error");
+      passSuggest.style.visibility = "visible";
       setTimeout(() => {
         password.classList.remove("error");
-      }, 5000);
+        passSuggest.style.visibility = "hidden";
+      }, 1000);
     }
 
     //checking uppercase letter
-
     var upperCaseLetters = /[A-Z]/g;
 
     if (password.value.match(upperCaseLetters)) {
       password.classList.remove("error");
+      passSuggest.style.visibility = "hidden";
     } else {
       password.classList.add("error");
+      passSuggest.style.visibility = "visible";
       setTimeout(() => {
         password.classList.remove("error");
+        passSuggest.style.visibility = "hidden";
       }, 1000);
     }
 
     //checking Number in password
-
     var number = /[0-9]/g;
 
     if (password.value.match(number)) {
       password.classList.remove("error");
+      passSuggest.style.visibility = "hidden";
     } else {
       password.classList.add("error");
+      passSuggest.style.visibility = "visible";
       setTimeout(() => {
         password.classList.remove("error");
+        passSuggest.style.visibility = "hidden";
       }, 1000);
     }
 
     // Validate length
     if (password.value.length >= 8) {
       password.classList.remove("error");
+      passSuggest.style.visibility = "hidden";
     } else {
       password.classList.add("error");
+      passSuggest.style.visibility = "visible";
       setTimeout(() => {
         password.classList.remove("error");
+        passSuggest.style.visibility = "hidden";
       }, 1000);
     }
 
@@ -87,7 +96,7 @@ tryAgain.addEventListener("click", function () {
   alert.style.visibility = "hidden";
 });
 
-// password show fied
+// Password show field
 const showPassword = document.getElementById("eye");
 const passwordField = document.querySelector(".passwordField");
 
